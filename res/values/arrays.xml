@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+  <string-array name="wallpapers">
+    <item>寒冰女巫 丽桑卓（免积分）</item>
+    <item>魂锁典狱长 锤石（免积分）</item>
+    <item>皎月女神 戴安娜（100积分）</item>
+    <item>皮城执法官 蔚（200积分）</item>
+  </string-array>
+  <string-array name="wallpaperValues">
+    <item>lissandra</item>
+    <item>thresh</item>
+    <item>diana</item>
+    <item>vi</item>
+  </string-array>
+  
+  <string-array name="levels">
+      <item>高质量</item>
+      <item>中质量（建议）</item>
+      <item>低质量</item>
+  </string-array>
+  <string-array name="levelValues">
+      <item>high</item>
+      <item>middle</item>
+      <item>low</item>
+  </string-array>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">英雄联盟秀动态壁纸</string>
+    <string name="service_name">英雄联盟秀</string>
+    <string name="author">一曲忧伤</string>
+    <string name="description">英雄联盟英雄动画壁纸</string>
+    <string name="wallpaper_settings">设置选项</string>
+    <string name="yourJifen">您当前的积分：</string>
+    <string name="Message">提示</string>
+    <string name="can_qiandao">每日签到获取积分</string>
+    <string name="not_qiandao">您今天已完成签到</string>
+
+</resources>

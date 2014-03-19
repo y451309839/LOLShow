@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/ItemIndex"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="如何设置动态壁纸？\n\r先在系统中将“英雄联盟秀”设置为桌面壁纸，再在程序列表中选择应用您喜欢的壁纸就可以了，如果已设置“英雄联盟秀”为桌面壁纸，在列表选择壁纸可以直接更换壁纸哦！"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/OpenWallpaperChooser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="动态壁纸设置" />
+
+            <TextView
+                android:id="@+id/ItemTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="更改壁纸显示质量？\n\r显示质量越好，占用内存越多，适合不同性能的设备。"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/DrawLevelText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18sp" />
+
+            <SeekBar
+                android:id="@+id/DrawLevelSeekBar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:max="2" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="没有积分购买壁纸？\n\r程序提供了几款免积分就可以永久使用的壁纸，为了保障作者收益，目前只可通过使用广告业务来免费获取积分，以后会提出更好的解决办法，望请谅解。（温馨提示：广告业务产生流量，建议在WIFI或有充裕上网条件的情况下使用）"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/getJifen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="免费获取积分" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="更多的壁纸内容？\n\r本程序会不断更新完善，更新内容包括更多的壁纸内容和优化用户体验、BUG等，谢谢支持."
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/checkNew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="检查更新版本" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="更多问题：\n\r壁纸没有动态效果？\n\r请确认你选择的壁纸已经下载好动画数据包，点击壁纸内容界面下方的“下载动画包”按钮进行下载。动画包文件较大，建议在有WIFI或有充裕上网条件的情况下使用。\n\r"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
