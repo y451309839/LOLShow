@@ -119,7 +119,7 @@ public class MainActivity extends Activity
 	}
 	
 	private void InitCursorView() {
-		cursor = (ImageView) findViewById(R.id.cursor);
+		//cursor = (ImageView) findViewById(R.id.cursor);
 		bmpW = BitmapFactory.decodeResource(getResources(), R.drawable.a).getWidth();// 获取图片宽度
 		DisplayMetrics dm = new DisplayMetrics();
 		getWindowManager().getDefaultDisplay().getMetrics(dm);
@@ -127,7 +127,7 @@ public class MainActivity extends Activity
 		offset = (screenW / 3 - bmpW) / 2;// 计算偏移量
 		Matrix matrix = new Matrix();
 		matrix.postTranslate(offset, 0);
-		cursor.setImageMatrix(matrix);// 设置动画初始位置
+		//cursor.setImageMatrix(matrix);// 设置动画初始位置
 	}
 	
 	/**
@@ -149,37 +149,21 @@ public class MainActivity extends Activity
 	 */
 	public class MyOnPageChangeListener implements OnPageChangeListener {
 
-		public void onPageSelected(int arg0) {
-			int cursorOffset1 = 0;
-			int cursorOffset2 = offset * 2 + bmpW;
-			int cursorOffset3 = cursorOffset2+(offset * 2 + bmpW);
-			Animation animation = null;
-			if(arg0 == PAGER_INDEX_LOC_HERO){
-				if (currIndex == PAGER_INDEX_OL_HERO) {
-					animation = new TranslateAnimation(cursorOffset2, cursorOffset1, 0, 0);
-				}else if(currIndex == PAGER_INDEX_HELP) {
-					animation = new TranslateAnimation(cursorOffset3, cursorOffset1, 0, 0);
-				}
-			}else if(arg0 == PAGER_INDEX_OL_HERO){
-				if (currIndex == PAGER_INDEX_LOC_HERO) {
-					animation = new TranslateAnimation(cursorOffset1, cursorOffset2, 0, 0);
-				}else if(currIndex == PAGER_INDEX_HELP) {
-					animation = new TranslateAnimation(cursorOffset3, cursorOffset2, 0, 0);
-				}
+		public void onPageSelected(int index) {
+			if(index==PAGER_INDEX_LOC_HERO){
+				t1.setBackgroundResource(R.drawable.bar_select_bg);
+				t2.setBackgroundResource(0);
+				t3.setBackgroundResource(0);
 			}
-			else if(arg0 == PAGER_INDEX_HELP){
-				if (currIndex == PAGER_INDEX_OL_HERO) {
-					animation = new TranslateAnimation(cursorOffset2, cursorOffset3, 0, 0);
-				}else if (currIndex == PAGER_INDEX_LOC_HERO) {
-					animation = new TranslateAnimation(cursorOffset1, cursorOffset3, 0, 0);
-				}
+			else if(index==PAGER_INDEX_OL_HERO){
+				t1.setBackgroundResource(0);
+				t2.setBackgroundResource(R.drawable.bar_select_bg);
+				t3.setBackgroundResource(0);
+			}else if(index==PAGER_INDEX_HELP){
+				t1.setBackgroundResource(0);
+				t2.setBackgroundResource(0);
+				t3.setBackgroundResource(R.drawable.bar_select_bg);
 			}
-			if(animation!=null){
-				animation.setFillAfter(true);// True:图片停在动画结束位置
-				animation.setDuration(300);
-				cursor.startAnimation(animation);
-			}
-			currIndex = arg0;
 		}
 
 		 

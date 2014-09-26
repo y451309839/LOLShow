@@ -8,7 +8,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="#FFFFFF"
+        android:background="@drawable/bar_bg"
         android:orientation="horizontal" >
 
         <TextView
@@ -16,9 +16,10 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="1.0"
+            android:background="@drawable/bar_select_bg"
             android:gravity="center"
-            android:text="本地"
-            android:textColor="#000000"
+            android:text="本地壁纸"
+            android:textColor="@color/white"
             android:textSize="18sp" />
 
         <TextView
@@ -27,8 +28,8 @@
             android:layout_height="fill_parent"
             android:layout_weight="1.0"
             android:gravity="center"
-            android:text="壁纸下载"
-            android:textColor="#000000"
+            android:text="更多壁纸"
+            android:textColor="@color/white"
             android:textSize="18sp" />
 
         <TextView
@@ -37,18 +38,11 @@
             android:layout_height="fill_parent"
             android:layout_weight="1.0"
             android:gravity="center"
-            android:text="使用帮助"
-            android:textColor="#000000"
+            android:text="帮助"
+            android:textColor="@color/white"
             android:textSize="18sp" />
 
     </LinearLayout>
-
-    <ImageView
-        android:id="@+id/cursor"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:scaleType="matrix"
-        android:src="@drawable/a" />
 
     <TextView
         android:id="@+id/MyPoint"

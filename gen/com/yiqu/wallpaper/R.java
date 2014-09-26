@@ -32,15 +32,17 @@ public final class R {
     public static final class drawable {
         public static final int a=0x7f020000;
         public static final int background=0x7f020001;
-        public static final int button=0x7f020002;
-        public static final int button_press=0x7f020003;
-        public static final int buttons=0x7f020004;
-        public static final int close=0x7f020005;
-        public static final int dialog_bg=0x7f020006;
-        public static final int ic_launcher=0x7f020007;
-        public static final int list_item_click=0x7f020008;
-        public static final int selected=0x7f020009;
-        public static final int toast_bg=0x7f02000a;
+        public static final int bar_bg=0x7f020002;
+        public static final int bar_select_bg=0x7f020003;
+        public static final int button=0x7f020004;
+        public static final int button_press=0x7f020005;
+        public static final int buttons=0x7f020006;
+        public static final int close=0x7f020007;
+        public static final int dialog_bg=0x7f020008;
+        public static final int ic_launcher=0x7f020009;
+        public static final int list_item_click=0x7f02000a;
+        public static final int selected=0x7f02000b;
+        public static final int toast_bg=0x7f02000c;
     }
     public static final class id {
         public static final int ApplyButton=0x7f0b0012;
@@ -57,11 +59,10 @@ public final class R {
         public static final int ItemIndex=0x7f0b0005;
         public static final int ItemName=0x7f0b0015;
         public static final int ItemTitle=0x7f0b0007;
-        public static final int MyPoint=0x7f0b001a;
+        public static final int MyPoint=0x7f0b0019;
         public static final int OpenWallpaperChooser=0x7f0b0006;
-        public static final int ToastText=0x7f0b001c;
+        public static final int ToastText=0x7f0b001b;
         public static final int checkNew=0x7f0b000d;
-        public static final int cursor=0x7f0b0019;
         public static final int getJifen=0x7f0b000b;
         public static final int gridView1=0x7f0b0013;
         public static final int scrollView1=0x7f0b0004;
@@ -71,7 +72,7 @@ public final class R {
         public static final int textView2=0x7f0b000a;
         public static final int textView3=0x7f0b000c;
         public static final int textView4=0x7f0b000e;
-        public static final int vPager=0x7f0b001b;
+        public static final int vPager=0x7f0b001a;
     }
     public static final class layout {
         public static final int dl_dialog_layout=0x7f030000;
