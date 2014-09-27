@@ -2,17 +2,16 @@
 
 import java.util.ArrayList;
 import java.util.List;
+
 import com.baidu.mobstat.StatService;
+
 import net.youmi.android.AdManager;
-import net.youmi.android.dev.AppUpdateInfo;
-import net.youmi.android.dev.CheckAppUpdateCallBack;
-import net.youmi.android.dev.OnlineConfigCallBack;
-import net.youmi.android.diy.DiyManager;
 import net.youmi.android.offers.OffersManager;
 import net.youmi.android.offers.PointsChangeNotify;
 import net.youmi.android.offers.PointsManager;
-import net.youmi.android.spot.SpotDialogListener;
-import net.youmi.android.spot.SpotManager;
+import net.youmi.android.onlineconfig.OnlineConfigCallBack;
+import net.youmi.android.update.AppUpdateInfo;
+import net.youmi.android.update.CheckAppUpdateCallBack;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
@@ -58,7 +57,6 @@ public class MainActivity extends Activity
 		setContentView(R.layout.main_layout);
 		InitViewPager();
 		InitTextView();
-		InitCursorView();
 		
 		//有米广告初始化代码
 		AdManager.getInstance(this).init("fc986eb1a9390900","e1e8f56adb4446c0", false);
@@ -116,18 +114,6 @@ public class MainActivity extends Activity
 	        	}
 	        }
 	    });
-	}
-	
-	private void InitCursorView() {
-		//cursor = (ImageView) findViewById(R.id.cursor);
-		bmpW = BitmapFactory.decodeResource(getResources(), R.drawable.a).getWidth();// 获取图片宽度
-		DisplayMetrics dm = new DisplayMetrics();
-		getWindowManager().getDefaultDisplay().getMetrics(dm);
-		int screenW = dm.widthPixels;// 获取分辨率宽度
-		offset = (screenW / 3 - bmpW) / 2;// 计算偏移量
-		Matrix matrix = new Matrix();
-		matrix.postTranslate(offset, 0);
-		//cursor.setImageMatrix(matrix);// 设置动画初始位置
 	}
 	
 	/**

@@ -1,26 +1,21 @@
 package com.yiqu.wallpaper;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.zip.ZipFile;
 
 import net.youmi.android.AdManager;
-import net.youmi.android.dev.OnlineConfigCallBack;
-import net.youmi.android.offers.OffersManager;
 import net.youmi.android.offers.PointsManager;
+import net.youmi.android.onlineconfig.OnlineConfigCallBack;
 
 import com.baidu.mobstat.StatService;
+
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.os.Environment;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 

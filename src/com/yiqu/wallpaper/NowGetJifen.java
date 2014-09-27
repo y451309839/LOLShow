@@ -19,7 +19,8 @@ public class NowGetJifen {
 				new DialogInterface.OnClickListener() {
 					@Override
 					public void onClick(DialogInterface dialog, int which) {
-						OffersManager.getInstance(c).showOffersWallDialog((Activity) c); //有米广告Dialog
+						//OffersManager.getInstance(c).showOffersWallDialog((Activity) c); //有米广告Dialog
+						OffersManager.getInstance(c).showOffersWall();
 						dialog.dismiss();
 					}
 				});

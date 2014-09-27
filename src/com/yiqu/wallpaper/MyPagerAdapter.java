@@ -6,13 +6,9 @@ import java.util.List;
 import com.baidu.mobstat.StatService;
 
 import net.youmi.android.AdManager;
-import net.youmi.android.dev.CheckAppUpdateCallBack;
 import net.youmi.android.offers.OffersManager;
-import net.youmi.android.spot.SpotDialogListener;
-import net.youmi.android.spot.SpotManager;
-
+import net.youmi.android.update.CheckAppUpdateCallBack;
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.app.WallpaperManager;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -24,16 +20,12 @@ import android.os.Message;
 import android.os.Parcelable;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.util.Log;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView.OnItemLongClickListener;
-import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ListView;
@@ -73,8 +65,6 @@ public class MyPagerAdapter extends PagerAdapter implements SharedPreferences.On
 		mHeroData = new HeroData(mContext);
 		mLocalAdapter = new HerosAdapter(mContext, HerosAdapter.LOCAL_DATA);
 		mOnlineAdapter = new HerosAdapter(mContext, HerosAdapter.ONLINE_DATA);
-		SpotManager.getInstance(mContext).loadSpotAds();
-		SpotManager.getInstance(mContext).setSpotTimeout(5000);
 	}
 	
 	public void destroyItem(View collection, int position, Object arg2) {
@@ -148,8 +138,8 @@ public class MyPagerAdapter extends PagerAdapter implements SharedPreferences.On
 		mGetJifen.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				OffersManager.getInstance(mContext).showOffersWallDialog((Activity) mContext); //有米广告Dialog
-				//OffersManager.getInstance(mContext).showOffersWall();
+				//OffersManager.getInstance(mContext).showOffersWallDialog((Activity) mContext); //有米广告Dialog
+				OffersManager.getInstance(mContext).showOffersWall();
 			}
 		});
 		mCheckNew.setOnClickListener(new OnClickListener() {
@@ -249,7 +239,6 @@ public class MyPagerAdapter extends PagerAdapter implements SharedPreferences.On
 						Dlg.setProgressBarVisibility(View.VISIBLE);
 						Dlg.setBtnVisibility(View.GONE);
 						downZipPkg.start();
-						SpotManager.getInstance(mContext).showSpotAds(mContext);
 					}
 				});
 				Dlg.setDlgDismissListener(new OnDismissListener(){

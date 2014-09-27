@@ -4,25 +4,14 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 
-import net.youmi.android.AdManager;
-import net.youmi.android.dev.OnlineConfigCallBack;
-
 import android.content.Context;
-import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup;
-import android.view.ViewGroup.LayoutParams;
 import android.widget.BaseAdapter;
-import android.widget.Button;
-import android.widget.GridView;
 import android.widget.ImageView;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 
 public class HerosGridViewAdapter extends BaseAdapter {
@@ -78,7 +67,7 @@ public class HerosGridViewAdapter extends BaseAdapter {
 
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
-		ImageView imageView = null;
+		//ImageView imageView = null;
 		Hero mHero = mHeroData.getHero(position);
 		Bitmap mBitmap = Imgs.get(position);
 		if(!mHero.dataExists()){

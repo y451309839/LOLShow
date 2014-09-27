@@ -78,17 +78,16 @@
 	        android:name="net.youmi.android.AdService"
 	        android:exported="false" >
 	    </service>
+	    <service
+		    android:name="net.youmi.android.ExpService"
+		    android:exported="false" >
+        </service>
 	    <receiver 
 	        android:name="net.youmi.android.AdReceiver" >
 	        <intent-filter>
 	            <action android:name="android.intent.action.PACKAGE_ADDED" />
 	            <data android:scheme="package" />
 	        </intent-filter>
-	    </receiver>
-	    <!-- 有米积分广告OffersReceiver -->
-	    <receiver
-	        android:name="net.youmi.android.offers.OffersReceiver"
-	        android:exported="false" >
 	    </receiver>
 	    <!-- END 有米广告接口 -->
     
