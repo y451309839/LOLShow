@@ -38,8 +38,8 @@ import android.widget.Toast;
 public class MainActivity extends Activity
 	implements PointsChangeNotify, CheckAppUpdateCallBack {
 
-	public static final int PAGER_INDEX_LOC_HERO = 0;
-	public static final int PAGER_INDEX_OL_HERO = 1;
+	public static final int PAGER_INDEX_OL_HERO = 0;
+	public static final int PAGER_INDEX_LOC_HERO = 1;
 	public static final int PAGER_INDEX_HELP = 2;
 	private String yourJifen;
 	private ViewPager mPager;// 页卡内容
@@ -63,7 +63,7 @@ public class MainActivity extends Activity
 		AdManager.getInstance(this).setEnableDebugLog(false);//关闭有米广告SDK相关的log
 		OffersManager.getInstance(this).onAppLaunch();
 		PointsManager.getInstance(this).registerNotify(this);//调用registerNotify来注册监听器，否则将得不到积分账户余额变动的通知。
-		
+
 		//调用检查更新接口，异步。
 		//AdManager.getInstance(MainActivity.this).asyncCheckAppUpdate(MainActivity.this);
 	}
@@ -90,8 +90,8 @@ public class MainActivity extends Activity
 		mMyPoint = (TextView) findViewById(R.id.MyPoint);
 		getOpenCretid("OpenCretid");
 		
-		t1.setOnClickListener(new MyOnClickListener(PAGER_INDEX_LOC_HERO));
-		t2.setOnClickListener(new MyOnClickListener(PAGER_INDEX_OL_HERO));
+		t1.setOnClickListener(new MyOnClickListener(PAGER_INDEX_OL_HERO));
+		t2.setOnClickListener(new MyOnClickListener(PAGER_INDEX_LOC_HERO));
 		t3.setOnClickListener(new MyOnClickListener(PAGER_INDEX_HELP));
 		mMyPoint.setText(yourJifen + myPointBalance);
 	}
@@ -137,13 +137,13 @@ public class MainActivity extends Activity
 
 		public void onPageSelected(int index) {
 			if(index==PAGER_INDEX_LOC_HERO){
-				t1.setBackgroundResource(R.drawable.bar_select_bg);
-				t2.setBackgroundResource(0);
+				t1.setBackgroundResource(0);
+				t2.setBackgroundResource(R.drawable.bar_select_bg);
 				t3.setBackgroundResource(0);
 			}
 			else if(index==PAGER_INDEX_OL_HERO){
-				t1.setBackgroundResource(0);
-				t2.setBackgroundResource(R.drawable.bar_select_bg);
+				t1.setBackgroundResource(R.drawable.bar_select_bg);
+				t2.setBackgroundResource(0);
 				t3.setBackgroundResource(0);
 			}else if(index==PAGER_INDEX_HELP){
 				t1.setBackgroundResource(0);
@@ -151,7 +151,6 @@ public class MainActivity extends Activity
 				t3.setBackgroundResource(R.drawable.bar_select_bg);
 			}
 		}
-
 		 
 		public void onPageScrolled(int arg0, float arg1, int arg2) {
 		}

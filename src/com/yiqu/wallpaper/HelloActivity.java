@@ -31,10 +31,10 @@ public class HelloActivity extends Activity {
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
-			if(!isSystemInit){
-				String dataPath = Environment.getExternalStorageDirectory()+"/Android/data/com.yiqu.wallpaper/LOLShow/";
-				File rootFile = new File(dataPath);
-				if (!rootFile.exists() && !rootFile.isDirectory()){
+			String dataPath = Environment.getExternalStorageDirectory()+"/Android/data/com.yiqu.wallpaper/LOLShow/";
+			File rootFile = new File(dataPath);
+			if(!isSystemInit || !rootFile.exists() || !rootFile.isDirectory()){
+				if(!rootFile.isDirectory()){
 					rootFile.mkdirs();
 				}
 				copyToSdcard("diana.zip",dataPath);

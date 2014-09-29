@@ -107,7 +107,7 @@ public class HerosAdapter extends BaseAdapter {
 		}
 		item.HeroImage.setImageBitmap(mBitmap);
 		if(!mHero.isActive()){
-			item.HeroName.setText(mHero.getName()+" "+mHero.getPoints()+"积分");
+			item.HeroName.setText("积分达到"+mHero.getPoints()+"激活");
 		}else{
 			item.HeroName.setText(mHero.getName());
 		}

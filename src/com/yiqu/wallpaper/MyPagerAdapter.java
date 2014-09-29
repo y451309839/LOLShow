@@ -7,6 +7,7 @@ import com.baidu.mobstat.StatService;
 
 import net.youmi.android.AdManager;
 import net.youmi.android.offers.OffersManager;
+import net.youmi.android.onlineconfig.OnlineConfigCallBack;
 import net.youmi.android.update.CheckAppUpdateCallBack;
 import android.app.Activity;
 import android.app.WallpaperManager;
@@ -28,6 +29,7 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView.OnItemLongClickListener;
 import android.widget.Button;
 import android.widget.GridView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
@@ -36,7 +38,7 @@ import android.widget.Toast;
 
 public class MyPagerAdapter extends PagerAdapter implements SharedPreferences.OnSharedPreferenceChangeListener {
 	
-	private static final String[] mDrawLevelData={"最低","中等","最高"};
+	private static final String[] mDrawLevelData={"低质","普通","高质"};
 	private static final String[] mDrawLevelVar={"low","middle","high"};
 	public Context mContext;
 	public List<View> mListViews;
@@ -44,7 +46,7 @@ public class MyPagerAdapter extends PagerAdapter implements SharedPreferences.On
 	private ListView mList;
 	private Button mGetJifen,mOpenWallpaperChooser,mCheckNew;
 	private SeekBar mDrawLevel;
-	private TextView mDrawLevelText;
+	private TextView mDrawLevelText,mTvOnline;
 	private SharedPreferences SP;
 	private String LevelStr;
 	private String LevelVar;
@@ -120,6 +122,27 @@ public class MyPagerAdapter extends PagerAdapter implements SharedPreferences.On
 		mCheckNew = (Button) v.findViewById(R.id.checkNew);
 		mDrawLevel = (SeekBar) v.findViewById(R.id.DrawLevelSeekBar);
 		mDrawLevelText = (TextView) v.findViewById(R.id.DrawLevelText);
+		mTvOnline = (TextView) v.findViewById(R.id.tvOnline);
+		
+		//获取顶部最新通知
+		AdManager.getInstance(mContext).asyncGetOnlineConfig("tvOnline",
+				new OnlineConfigCallBack() {
+					@Override
+					public void onGetOnlineConfigSuccessful(String key, String value) {
+						// 获取在线参数成功
+						if (key.equals("tvOnline") && !value.equals("")) {
+							mTvOnline.setText(value);
+							LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);  
+							lp.setMargins(0, 0, 0, 10);
+							mTvOnline.setLayoutParams(lp);
+						}
+					}
+
+					@Override
+					public void onGetOnlineConfigFailed(String key) {
+						// 获取在线参数失败，可能原因有：键值未设置或为空、网络异常、服务器异常
+					}
+				});
 		
 		mOpenWallpaperChooser.setOnClickListener(new OnClickListener() {
 			@Override
