@@ -130,7 +130,7 @@ public class MyPagerAdapter extends PagerAdapter implements SharedPreferences.On
 					@Override
 					public void onGetOnlineConfigSuccessful(String key, String value) {
 						// 获取在线参数成功
-						if (key.equals("tvOnline") && !value.equals("")) {
+						if (key.equals("tvOnline") && !value.trim().equals("")) {
 							mTvOnline.setText(value);
 							LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);  
 							lp.setMargins(0, 0, 0, 10);
