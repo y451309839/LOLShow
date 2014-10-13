@@ -60,7 +60,7 @@
                 android:id="@+id/textView2"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="如何获取积分激活壁纸？\n\r程序提供了多款免积分就可以永久使用的壁纸，为了保障作者收益，目前只可通过使用广告业务来免费获取积分，激活壁纸不扣除积分。（温馨提示：广告业务产生流量，建议在WIFI或有充裕上网条件的情况下使用）"
+                android:text="如何获取积分激活壁纸？\n\r程序提供了多款免积分就可以永久使用的壁纸，其他可通过广告业务来免费获取积分，激活壁纸不扣除积分。\n\r（温馨提示：广告业务产生流量，建议在WIFI或有充裕上网条件的情况下使用，谢谢您对作者的支持。）"
                 android:textSize="14sp" />
 
             <Button
@@ -82,14 +82,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="检查更新版本" />
+                android:text="检查最新版本" />
 
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="50dp"
-                android:text="壁纸没有动态效果？\n\r请确认你选择的壁纸已经下载好动画数据包，点击壁纸内容界面下方的“下载动画包”按钮进行下载。动画包文件较大，建议在有WIFI或有充裕上网条件的情况下使用。\n\r\n\r如何管理已经下载的动画包？\n\r长按彩色的英雄壁纸（彩色代表有动画包）就会出现删除对话框了亲。"
+                android:text="壁纸没有动态效果？\n\r请确认你选择的壁纸已经下载好动画数据包，点击壁纸内容界面下方的“下载动画包”按钮进行下载。动画包文件较大，建议在有WIFI或有充裕上网条件的情况下使用。\n\r\n\r如何管理已经下载的动画包？\n\r长按彩色的英雄壁纸（彩色代表有动画包）就会出现删除对话框了哦亲。\n\r\n\r关于我们\n\r作者：一曲忧伤\n\r邮箱：451309839@qq.com\n\r欢迎留言反馈提建议，谢谢您的支持。"
                 android:textSize="14sp" />
 
         </LinearLayout>
