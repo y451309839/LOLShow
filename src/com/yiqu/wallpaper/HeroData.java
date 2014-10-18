@@ -2,27 +2,14 @@ package com.yiqu.wallpaper;
 
 import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
 
-import net.youmi.android.offers.OffersManager;
-import net.youmi.android.offers.PointsManager;
-
 import org.xmlpull.v1.XmlPullParser;
 
-import com.baidu.mobstat.StatService;
-
-import android.R.integer;
-import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.Context;
-import android.content.DialogInterface;
-import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.util.Xml;
-import android.widget.Toast;
 
 /**
  * Created by 覃奕 on 13-8-13.

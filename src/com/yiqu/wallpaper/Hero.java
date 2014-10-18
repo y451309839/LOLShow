@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.util.zip.ZipFile;
 
 import net.youmi.android.AdManager;
-import net.youmi.android.offers.OffersManager;
 import net.youmi.android.offers.PointsManager;
 import net.youmi.android.onlineconfig.OnlineConfigCallBack;
 
@@ -51,50 +50,55 @@ class Hero {
 		return this.id == SP.getInt("selectedHero", 0);
 	}
 	
-	public void selectHero() {
-		StatService.onEvent(mContext, "selectWallpaper", getName());// 百度统计
-		AdManager.getInstance(mContext).asyncGetOnlineConfig("OpenCretid",
-				new OnlineConfigCallBack() {
-					@Override
-					public void onGetOnlineConfigSuccessful(String key,
-							String value) {
-						// 获取在线参数成功
-						if (key.equals("OpenCretid")) {
-							setSelect(value);
-						}
-					}
-
-					@Override
-					public void onGetOnlineConfigFailed(String key) {
-						// 获取在线参数失败，可能原因有：键值未设置或为空、网络异常、服务器异常
-						setSelect("true");
-					}
-				});
+	public void selectHero(){
+		StatService.onEvent(mContext, "selectWallpaper", getName());//百度统计
+		AdManager.getInstance(mContext).asyncGetOnlineConfig("OpenCretid", new OnlineConfigCallBack() {
+		        @Override
+		        public void onGetOnlineConfigSuccessful(String key, String value) {
+		            //获取在线参数成功
+		        	if(key.equals("OpenCretid")){
+		        		setSelect(value);
+		        	}
+		        }       
+		        @Override
+		        public void onGetOnlineConfigFailed(String key) {
+		            //获取在线参数失败，可能原因有：键值未设置或为空、网络异常、服务器异常
+		        	setSelect("true");
+		        }
+		    });
 	}
 	
 	private void setSelect(String OpenCretid){
-		int myPointBalance = PointsManager.getInstance(mContext).queryPoints();
-		//if(OpenCretid.equals("true") && mLiveJiFen > 0 && !SP.getBoolean(mLiveName + "isActive", false)){
-		if(OpenCretid.equals("true") && this.getPoints() > myPointBalance){
+		final Hero mHero = this;
+		final String mLiveName = this.getFile();
+		final int mLiveJiFen = this.getPoints();
+		if(OpenCretid.equals("true") && mLiveJiFen > 0 && !SP.getBoolean(mLiveName + "isActive", false)){
 			Dlg = new YQAlertDialog(mContext,
-					"你选择了["+this.getName()+"]，需要达到 "+this.getPoints()+" 积分才能使用，当前积分不足！",
-					"获取积分");
+					"你选择了["+mHero.getName()+"]，需要消费 "+mLiveJiFen+" 积分，购买后可永久使用，确认购买吗？",
+					"确认购买");
 			Dlg.setBtnOnClick(new OnClickListener(){
 				@Override
 				public void onClick(View v) {
-					OffersManager.getInstance(mContext).showOffersWall();
+					mHero.getPoints();
+                	if(LiveWallpaper.APP_DEBUG || PointsManager.getInstance(mContext).spendPoints(mLiveJiFen)){
+	    				SharedPreferences.Editor editor = SP.edit();
+	    				editor.putBoolean(mLiveName + "isActive", true);
+	    				editor.putInt("selectedHero", mHero.getId());
+	    				if(editor.commit()){
+	    					DisplayToast("选择"+mHero.getName()+"成功，已扣除" + mLiveJiFen + "积分！");
+	    					StatService.onEvent(mContext, "buyWallpaper", mHero.getName());//百度统计
+	    				}
+	    			} else {
+	    				NowGetJifen.show(mContext);
+				    }
 					Dlg.closeDlg();
 				}
 			});
-			SharedPreferences.Editor editor = SP.edit();
-			editor.remove(this.getFile() + "isActive");
-			editor.commit();
 		}else{
 			SharedPreferences.Editor editor = SP.edit();
-			editor.putBoolean(this.getFile() + "isActive", true);
-			editor.putInt("selectedHero", this.getId());
+			editor.putInt("selectedHero", mHero.getId());
 			if(editor.commit()){
-				DisplayToast("选择"+this.getName()+"成功，谢谢您的支持！");
+				DisplayToast("选择"+mHero.getName()+"成功，谢谢您的支持！");
 			}
 		}
 	}

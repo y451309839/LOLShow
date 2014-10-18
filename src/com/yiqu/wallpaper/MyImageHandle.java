@@ -146,7 +146,7 @@ public class MyImageHandle {
 		int wh = watermark.getHeight();
 		
 		// create the new blank bitmap
-		Bitmap newb = Bitmap.createBitmap(w, h, Config.ARGB_8888);
+		Bitmap newb = Bitmap.createBitmap(w, h, Config.RGB_565);
 		// 创建一个新的和SRC长度宽度一样的位图
 		Canvas cv = new Canvas(newb);
 		// draw src into

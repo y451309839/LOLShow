@@ -30,7 +30,7 @@
         <url>yidata/lolshow/aatorx.zip</url>
         <count>57</count>
         <size>2.19</size>
-        <points>300</points>
+        <points>10</points>
     </hero>
     <hero id="4">
         <name>钢铁之翼 凯尔</name>
@@ -38,7 +38,7 @@
         <url>yidata/lolshow/gtzy_kayle.zip</url>
         <count>75</count>
         <size>3.69</size>
-        <points>300</points>
+        <points>10</points>
     </hero>
     <hero id="5">
         <name>未来守护者 杰斯</name>
@@ -62,7 +62,7 @@
         <url>yidata/lolshow/lcsw_annie.zip</url>
         <count>82</count>
         <size>6.63</size>
-        <points>500</points>
+        <points>50</points>
     </hero>
     <hero id="8">
         <name>唤潮鲛姬 娜美</name>
@@ -86,7 +86,7 @@
         <url>yidata/lolshow/syndra.zip</url>
         <count>82</count>
         <size>4.06</size>
-        <points>100</points>
+        <points>0</points>
     </hero>
     <hero id="11">
         <name>魂锁典狱长 锤石</name>
@@ -94,7 +94,7 @@
         <url>yidata/lolshow/thresh.zip</url>
         <count>61</count>
         <size>3.24</size>
-        <points>200</points>
+        <points>0</points>
     </hero>
     <hero id="12">
         <name>皮城执法官 蔚</name>
@@ -102,7 +102,7 @@
         <url>yidata/lolshow/vi.zip</url>
         <count>55</count>
         <size>2.96</size>
-        <points>200</points>
+        <points>0</points>
     </hero>
     <hero id="13">
         <name>未来战士 伊泽瑞尔</name>
@@ -110,7 +110,7 @@
         <url>yidata/lolshow/wlzs_ezreal.zip</url>
         <count>45</count>
         <size>2.37</size>
-        <points>500</points>
+        <points>100</points>
     </hero>
     <hero id="14">
         <name>生化魔人 扎克</name>
@@ -118,7 +118,7 @@
         <url>yidata/lolshow/zac.zip</url>
         <count>56</count>
         <size>2.97</size>
-        <points>100</points>
+        <points>0</points>
     </hero>
     <hero id="15">
         <name>惩戒之箭 维鲁斯</name>
@@ -134,7 +134,7 @@
         <url>yidata/lolshow/lucian.zip</url>
         <count>64</count>
         <size>1.6</size>
-        <points>400</points>
+        <points>30</points>
     </hero>
     <hero id="17">
         <name>战争之影 赫卡莱姆</name>
@@ -150,7 +150,7 @@
         <url>yidata/lolshow/khazix.zip</url>
         <count>89</count>
         <size>4.38</size>
-        <points>400</points>
+        <points>30</points>
     </hero>
     <hero id="19">
         <name>蜘蛛女皇 伊莉丝</name>
@@ -158,7 +158,7 @@
         <url>yidata/lolshow/elise.zip</url>
         <count>84</count>
         <size>4.49</size>
-        <points>300</points>
+        <points>0</points>
     </hero>
     <hero id="20">
         <name>傲之追猎者 雷恩加尔</name>
@@ -166,7 +166,7 @@
         <url>yidata/lolshow/rengar.zip</url>
         <count>100</count>
         <size>6.80</size>
-        <points>400</points>
+        <points>30</points>
     </hero>
     <hero id="21">
         <name>泳池派对</name>
@@ -174,7 +174,7 @@
         <url>yidata/lolshow/yc_party.zip</url>
         <count>81</count>
         <size>9.15</size>
-        <points>500</points>
+        <points>50</points>
     </hero>
     <hero id="22">
         <name>诺克萨斯之手 德莱厄斯</name>
@@ -182,7 +182,7 @@
         <url>yidata/lolshow/darius.zip</url>
         <count>67</count>
         <size>1.70</size>
-        <points>200</points>
+        <points>20</points>
     </hero>
     <hero id="23">
         <name>荣耀行刑官 德莱文</name>
@@ -190,7 +190,7 @@
         <url>yidata/lolshow/draven.zip</url>
         <count>86</count>
         <size>4.62</size>
-        <points>200</points>
+        <points>20</points>
     </hero>
     <hero id="24">
         <name>天气播报员 娜迦</name>
@@ -198,7 +198,7 @@
         <url>yidata/lolshow/tqbby_janna.zip</url>
         <count>85</count>
         <size>4.17</size>
-        <points>500</points>
+        <points>50</points>
     </hero>
     <hero id="25">
         <name>影流之主 劫</name>
@@ -206,7 +206,7 @@
         <url>yidata/lolshow/zed.zip</url>
         <count>99</count>
         <size>7.23</size>
-        <points>200</points>
+        <points>20</points>
     </hero>
     <hero id="26">
         <name>糖果使徒 费德提克</name>
@@ -214,7 +214,7 @@
         <url>yidata/lolshow/tgst_fiddlesticks.zip</url>
         <count>85</count>
         <size>5.87</size>
-        <points>100</points>
+        <points>0</points>
     </hero>
     <hero id="27">
         <name>暴走萝莉 金克丝</name>
@@ -222,7 +222,7 @@
         <url>yidata/lolshow/jinx.zip</url>
         <count>135</count>
         <size>8.84</size>
-        <points>200</points>
+        <points>0</points>
     </hero>
     <hero id="28">
         <name>荆棘之兴 婕拉</name>
@@ -246,7 +246,7 @@
         <url>yidata/lolshow/cj_talon_sona.zip</url>
         <count>188</count>
         <size>11.9</size>
-        <points>100</points>
+        <points>0</points>
     </hero>
     <hero id="31">
         <name>地狱狗头犬 内瑟斯</name>
@@ -254,7 +254,7 @@
         <url>yidata/lolshow/dystq_nasus.zip</url>
         <count>83</count>
         <size>5.25</size>
-        <points>200</points>
+        <points>0</points>
     </hero>
     <hero id="32">
         <name>疾风剑豪 亚索</name>
@@ -262,7 +262,7 @@
         <url>yidata/lolshow/yasuo.zip</url>
         <count>81</count>
         <size>4.95</size>
-        <points>300</points>
+        <points>40</points>
     </hero>
     <hero id="33">
         <name>鬼影森森 婕拉</name>
@@ -270,7 +270,7 @@
         <url>yidata/lolshow/gyss_zyra.zip</url>
         <count>135</count>
         <size>8.02</size>
-        <points>300</points>
+        <points>10</points>
     </hero>
     <hero id="34">
         <name>圣诞节 2013</name>
@@ -278,7 +278,7 @@
         <url>yidata/lolshow/sdj2013.zip</url>
         <count>88</count>
         <size>6.87</size>
-        <points>100</points>
+        <points>0</points>
     </hero>
     <hero id="35">
         <name>虚空之眼 维克兹</name>
