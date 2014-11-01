@@ -89,7 +89,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="50dp"
-                android:text="壁纸没有动态效果？\n\r请确认你选择的壁纸已经下载好动画数据包，点击壁纸内容界面下方的“下载动画包”按钮进行下载。动画包文件较大，建议在有WIFI或有充裕上网条件的情况下使用。\n\r\n\r如何管理已经下载的动画包？\n\r长按彩色的英雄壁纸（彩色代表有动画包）就会出现删除对话框了哦亲。\n\r\n\r关于我们\n\r作者：一曲忧伤\n\r邮箱：451309839@qq.com\n\r欢迎留言反馈提建议，谢谢您的支持。"
+                android:text="壁纸没有动态效果？\n\r请确认你选择的壁纸已经下载好动画数据包，点击壁纸内容界面下方的“下载动画包”按钮进行下载。动画包文件较大，建议在有WIFI或有充裕上网条件的情况下使用。\n\r\n\r如何管理已经下载的动画包？\n\r选择长按已下载的英雄壁纸，就会弹出删除对话框了哦。\n\r\n\r关于我们\n\r作者：一曲忧伤\n\r邮箱：451309839@qq.com\n\r欢迎留言反馈提建议，谢谢您的支持。"
                 android:textSize="14sp" />
 
         </LinearLayout>

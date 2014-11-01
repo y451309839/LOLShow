@@ -89,7 +89,8 @@ public class HerosAdapter extends BaseAdapter {
 		Hero mHero = mHeros.get(position);
 		Bitmap mBitmap = Imgs.get(position);
 		if(!mHero.dataExists()){
-			mBitmap = MyImageHandle.convertToBlackWhite(mBitmap);
+			//mBitmap = MyImageHandle.convertToBlackWhite(mBitmap);
+			mBitmap = MyImageHandle.drawTextToBitmap(mBitmap, "点击下载动画包");
 		}
 		if(mHero.isSelect()){
 			mBitmap = MyImageHandle.createWatermarkBitmap(mBitmap, watermark );

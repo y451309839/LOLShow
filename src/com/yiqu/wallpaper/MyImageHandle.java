@@ -53,12 +53,12 @@ public class MyImageHandle {
 		Canvas canvas = new Canvas(bitmap);
 		// new antialised Paint
 		Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
-		// text color - #3D3D3D
-		paint.setColor(Color.rgb(64, 64, 64));
+		// text color
+		paint.setColor(Color.rgb(200, 200, 200));
 		// text size in pixels
-		paint.setTextSize(14);
+		paint.setTextSize(18);
 		// text shadow
-		paint.setShadowLayer(0.5f, 0f, 1f, Color.WHITE);// 阴影制作
+		paint.setShadowLayer(0.5f, 0f, 1f, Color.BLACK);// 阴影制作
 
 		// draw text to the Canvas center
 		Rect bounds = new Rect();

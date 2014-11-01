@@ -16,7 +16,7 @@
             android:layout_height="fill_parent"
             android:layout_weight="1.0"
             android:gravity="center"
-            android:text="更多壁纸"
+            android:text="在线壁纸"
             android:textColor="@color/white"
             android:textSize="18sp" />
 
