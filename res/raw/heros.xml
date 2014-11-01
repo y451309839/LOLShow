@@ -30,7 +30,7 @@
         <url>yidata/lolshow/aatorx.zip</url>
         <count>57</count>
         <size>2.19</size>
-        <points>10</points>
+        <points>100</points>
     </hero>
     <hero id="4">
         <name>钢铁之翼 凯尔</name>
@@ -38,7 +38,7 @@
         <url>yidata/lolshow/gtzy_kayle.zip</url>
         <count>75</count>
         <size>3.69</size>
-        <points>10</points>
+        <points>100</points>
     </hero>
     <hero id="5">
         <name>未来守护者 杰斯</name>
@@ -62,7 +62,7 @@
         <url>yidata/lolshow/lcsw_annie.zip</url>
         <count>82</count>
         <size>6.63</size>
-        <points>50</points>
+        <points>200</points>
     </hero>
     <hero id="8">
         <name>唤潮鲛姬 娜美</name>
@@ -86,7 +86,7 @@
         <url>yidata/lolshow/syndra.zip</url>
         <count>82</count>
         <size>4.06</size>
-        <points>0</points>
+        <points>100</points>
     </hero>
     <hero id="11">
         <name>魂锁典狱长 锤石</name>
@@ -110,7 +110,7 @@
         <url>yidata/lolshow/wlzs_ezreal.zip</url>
         <count>45</count>
         <size>2.37</size>
-        <points>100</points>
+        <points>200</points>
     </hero>
     <hero id="14">
         <name>生化魔人 扎克</name>
@@ -134,7 +134,7 @@
         <url>yidata/lolshow/lucian.zip</url>
         <count>64</count>
         <size>1.6</size>
-        <points>30</points>
+        <points>100</points>
     </hero>
     <hero id="17">
         <name>战争之影 赫卡莱姆</name>
@@ -150,7 +150,7 @@
         <url>yidata/lolshow/khazix.zip</url>
         <count>89</count>
         <size>4.38</size>
-        <points>30</points>
+        <points>100</points>
     </hero>
     <hero id="19">
         <name>蜘蛛女皇 伊莉丝</name>
@@ -166,7 +166,7 @@
         <url>yidata/lolshow/rengar.zip</url>
         <count>100</count>
         <size>6.80</size>
-        <points>30</points>
+        <points>100</points>
     </hero>
     <hero id="21">
         <name>泳池派对</name>
@@ -174,7 +174,7 @@
         <url>yidata/lolshow/yc_party.zip</url>
         <count>81</count>
         <size>9.15</size>
-        <points>50</points>
+        <points>200</points>
     </hero>
     <hero id="22">
         <name>诺克萨斯之手 德莱厄斯</name>
@@ -182,7 +182,7 @@
         <url>yidata/lolshow/darius.zip</url>
         <count>67</count>
         <size>1.70</size>
-        <points>20</points>
+        <points>100</points>
     </hero>
     <hero id="23">
         <name>荣耀行刑官 德莱文</name>
@@ -190,7 +190,7 @@
         <url>yidata/lolshow/draven.zip</url>
         <count>86</count>
         <size>4.62</size>
-        <points>20</points>
+        <points>100</points>
     </hero>
     <hero id="24">
         <name>天气播报员 娜迦</name>
@@ -198,7 +198,7 @@
         <url>yidata/lolshow/tqbby_janna.zip</url>
         <count>85</count>
         <size>4.17</size>
-        <points>50</points>
+        <points>200</points>
     </hero>
     <hero id="25">
         <name>影流之主 劫</name>
@@ -206,7 +206,7 @@
         <url>yidata/lolshow/zed.zip</url>
         <count>99</count>
         <size>7.23</size>
-        <points>20</points>
+        <points>100</points>
     </hero>
     <hero id="26">
         <name>糖果使徒 费德提克</name>
@@ -262,7 +262,7 @@
         <url>yidata/lolshow/yasuo.zip</url>
         <count>81</count>
         <size>4.95</size>
-        <points>40</points>
+        <points>100</points>
     </hero>
     <hero id="33">
         <name>鬼影森森 婕拉</name>
@@ -270,7 +270,7 @@
         <url>yidata/lolshow/gyss_zyra.zip</url>
         <count>135</count>
         <size>8.02</size>
-        <points>10</points>
+        <points>100</points>
     </hero>
     <hero id="34">
         <name>圣诞节 2013</name>
@@ -286,6 +286,22 @@
         <url>yidata/lolshow/velkoz.zip</url>
         <count>121</count>
         <size>5.63</size>
+        <points>0</points>
+    </hero>
+    <hero id="36">
+        <name>银河魔装机神 兰博</name>
+        <file>yhmzjs_rumble</file>
+        <url>yidata/lolshow/yhmzjs_rumble.zip</url>
+        <count>51</count>
+        <size>3.25</size>
+        <points>100</points>
+    </hero>
+    <hero id="37">
+        <name>弗雷尔卓德之心 布隆</name>
+        <file>braum</file>
+        <url>yidata/lolshow/braum.zip</url>
+        <count>51</count>
+        <size>1.28</size>
         <points>0</points>
     </hero>
 </heros>
