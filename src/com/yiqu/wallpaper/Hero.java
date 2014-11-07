@@ -98,7 +98,7 @@ class Hero {
 			SharedPreferences.Editor editor = SP.edit();
 			editor.putInt("selectedHero", mHero.getId());
 			if(editor.commit()){
-				DisplayToast("选择"+mHero.getName()+"成功，谢谢您的支持！");
+				DisplayToast("选择"+mHero.getName()+"成功，感谢您的支持！");
 			}
 		}
 	}

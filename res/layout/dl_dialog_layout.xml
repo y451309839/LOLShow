@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dlBg"
     android:layout_width="300dp"
     android:layout_height="wrap_content"
-    android:background="@drawable/dialog_bg"
+    android:background="@color/black"
     android:orientation="vertical"
     android:paddingBottom="40dp"
     android:paddingLeft="20dp"

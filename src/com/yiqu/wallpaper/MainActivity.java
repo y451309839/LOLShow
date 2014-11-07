@@ -65,7 +65,7 @@ public class MainActivity extends Activity
 		PointsManager.getInstance(this).registerNotify(this);//调用registerNotify来注册监听器，否则将得不到积分账户余额变动的通知。
 
 		//调用检查更新接口，异步。
-		//AdManager.getInstance(MainActivity.this).asyncCheckAppUpdate(MainActivity.this);
+		AdManager.getInstance(MainActivity.this).asyncCheckAppUpdate(MainActivity.this);
 	}
 	
 	private void InitViewPager(){
@@ -232,7 +232,7 @@ public class MainActivity extends Activity
                     })
             .create().show(); 
         }else{
-        	DisplayToast("已经是最新版本！");
+        	//DisplayToast("已经是最新版本！");
         }
 	}
 	
