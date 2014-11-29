@@ -15,7 +15,7 @@ public class NowGetJifen {
     	luckDialog.setTitle("提示");
     	luckDialog.setMessage("您的积分不足以进行该操作，是否立即免费赚取积分？");
     	luckDialog.setCancelable(false);
-    	luckDialog.setButton(DialogInterface.BUTTON_POSITIVE, "确认",
+    	luckDialog.setButton(DialogInterface.BUTTON_POSITIVE, "赚取积分",
 				new DialogInterface.OnClickListener() {
 					@Override
 					public void onClick(DialogInterface dialog, int which) {

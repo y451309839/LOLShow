@@ -44,13 +44,8 @@ public class MainActivity extends Activity
 	private String yourJifen;
 	private ViewPager mPager;// 页卡内容
 	private List<View> listViews; // Tab页面列表
-	private ImageView cursor;// 动画图片
 	private TextView t1, t2, t3;// 页卡头标
 	private TextView mMyPoint;
-	private int offset = 0;// 动画图片偏移量
-	private int currIndex = 0;// 当前页卡编号
-	private int bmpW;// 动画图片宽度
-	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

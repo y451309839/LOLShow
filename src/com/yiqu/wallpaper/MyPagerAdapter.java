@@ -8,7 +8,6 @@ import com.baidu.mobstat.StatService;
 import net.youmi.android.AdManager;
 import net.youmi.android.offers.OffersManager;
 import net.youmi.android.onlineconfig.OnlineConfigCallBack;
-import net.youmi.android.update.CheckAppUpdateCallBack;
 import android.app.Activity;
 import android.app.WallpaperManager;
 import android.content.Context;
@@ -30,7 +29,6 @@ import android.widget.AdapterView.OnItemLongClickListener;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.LinearLayout;
-import android.widget.ListView;
 import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
@@ -43,15 +41,13 @@ public class MyPagerAdapter extends PagerAdapter implements SharedPreferences.On
 	public Context mContext;
 	public List<View> mListViews;
 	public int mCount;
-	private ListView mList;
-	private Button mGetJifen,mOpenWallpaperChooser,mCheckNew;
+	private Button mGetJifen,mOpenWallpaperChooser;
 	private SeekBar mDrawLevel;
 	private TextView mDrawLevelText,mTvOnline;
 	private SharedPreferences SP;
 	private String LevelStr;
 	private String LevelVar;
 	private GridView gridview;
-	private HeroData mHeroData;
 	private HerosAdapter mLocalAdapter;
 	private HerosAdapter mOnlineAdapter;
 	private YQAlertDialog Dlg;
@@ -64,7 +60,7 @@ public class MyPagerAdapter extends PagerAdapter implements SharedPreferences.On
 		mCount = mListViews.size();
 		SP = mContext.getSharedPreferences(LiveWallpaper.SHARED_PREFS_NAME, Context.MODE_PRIVATE);
 		SP.registerOnSharedPreferenceChangeListener(this);
-		mHeroData = new HeroData(mContext);
+		new HeroData(mContext);
 		mLocalAdapter = new HerosAdapter(mContext, HerosAdapter.LOCAL_DATA);
 		mOnlineAdapter = new HerosAdapter(mContext, HerosAdapter.ONLINE_DATA);
 	}
@@ -119,7 +115,6 @@ public class MyPagerAdapter extends PagerAdapter implements SharedPreferences.On
 	private void InitBtnEvent(View v){
 		mOpenWallpaperChooser = (Button) v.findViewById(R.id.OpenWallpaperChooser);
 		mGetJifen = (Button) v.findViewById(R.id.getJifen);
-		mCheckNew = (Button) v.findViewById(R.id.checkNew);
 		mDrawLevel = (SeekBar) v.findViewById(R.id.DrawLevelSeekBar);
 		mDrawLevelText = (TextView) v.findViewById(R.id.DrawLevelText);
 		mTvOnline = (TextView) v.findViewById(R.id.tvOnline);
@@ -163,12 +158,6 @@ public class MyPagerAdapter extends PagerAdapter implements SharedPreferences.On
 			public void onClick(View v) {
 				//OffersManager.getInstance(mContext).showOffersWallDialog((Activity) mContext); //有米广告Dialog
 				OffersManager.getInstance(mContext).showOffersWall();
-			}
-		});
-		mCheckNew.setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				AdManager.getInstance(mContext).asyncCheckAppUpdate((CheckAppUpdateCallBack) mContext);//调用检查更新接口，异步。
 			}
 		});
 		mDrawLevel.setOnSeekBarChangeListener(new OnSeekBarChangeListener(){

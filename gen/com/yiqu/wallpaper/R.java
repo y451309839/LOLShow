@@ -50,26 +50,24 @@ public final class R {
         public static final int DialogTitle=0x7f0b0002;
         public static final int DrawLevelSeekBar=0x7f0b000b;
         public static final int DrawLevelText=0x7f0b000a;
-        public static final int ItemImage=0x7f0b0012;
+        public static final int ItemImage=0x7f0b0010;
         public static final int ItemIndex=0x7f0b0007;
-        public static final int ItemName=0x7f0b0013;
+        public static final int ItemName=0x7f0b0011;
         public static final int ItemTitle=0x7f0b0009;
-        public static final int MyPoint=0x7f0b0017;
+        public static final int MyPoint=0x7f0b0015;
         public static final int OpenWallpaperChooser=0x7f0b0008;
-        public static final int ToastText=0x7f0b0019;
-        public static final int checkNew=0x7f0b000f;
+        public static final int ToastText=0x7f0b0017;
         public static final int dlBg=0x7f0b0000;
         public static final int getJifen=0x7f0b000d;
-        public static final int gridView1=0x7f0b0011;
+        public static final int gridView1=0x7f0b000f;
         public static final int scrollView1=0x7f0b0005;
-        public static final int t1=0x7f0b0014;
-        public static final int t2=0x7f0b0015;
-        public static final int t3=0x7f0b0016;
+        public static final int t1=0x7f0b0012;
+        public static final int t2=0x7f0b0013;
+        public static final int t3=0x7f0b0014;
         public static final int textView2=0x7f0b000c;
-        public static final int textView3=0x7f0b000e;
-        public static final int textView4=0x7f0b0010;
+        public static final int textView4=0x7f0b000e;
         public static final int tvOnline=0x7f0b0006;
-        public static final int vPager=0x7f0b0018;
+        public static final int vPager=0x7f0b0016;
     }
     public static final class layout {
         public static final int dl_dialog_layout=0x7f030000;
